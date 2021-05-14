@@ -25,10 +25,14 @@
     }
   </style>
   <style>
+    .box{
+      margin: 20px 0;
+    }
   </style>
 </head>
 <body>
   <div id="app">
+   <div class="box">
     <s-button :loading="loading1" @click="loading1 = !loading1">按钮</s-button>
     <s-button icon="settings" :loading="loading2" @click="loading2 = !loading2">按钮</s-button>
     <s-button icon="settings" :loading="loading3" icon-position="right" @click="loading3 = !loading3">按钮</s-button>
@@ -39,9 +43,18 @@
       <s-button>更多</s-button>
       <s-button icon="right" icon-position="right">下一页</s-button>
     </s-button-group>
+   </div>
+
+    <div class="box">
+      <s-input value="张三" disabled></s-input>
+      <s-input value="李四" readonly></s-input>
+      <s-input value="王五"></s-input>
+    </div>
+    <div class="box">
+      <s-input value="王" error="姓名不能少于两个字"></s-input>
+    </div>
   </div>
   
 <script src="./src/app.js"></script>
-<!-- <script src="//at.alicdn.com/t/font_2536093_bxc8nv5ra6r.js"></script> -->
 </body>
 </html>
