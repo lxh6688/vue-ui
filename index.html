@@ -53,6 +53,11 @@
     <div class="box">
       <s-input value="王" error="姓名不能少于两个字"></s-input>
     </div>
+    <div class="box">
+      <s-input v-model="message"></s-input>
+      <p>{{message}}</p>
+      <button @click="message +=1">+1</button>
+    </div>
   </div>
   
 <script src="./src/app.js"></script>

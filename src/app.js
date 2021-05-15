@@ -15,5 +15,6 @@ new Vue({
     loading1: true,
     loading2: false,
     loading3: true,
+    message: 'hi'
   }
 })
