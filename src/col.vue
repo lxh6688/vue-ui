@@ -55,21 +55,20 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-  .col{
+  .col {
     $class-prefix: col-;
     @for $n from 1 through 24 {
       &.#{$class-prefix}#{$n} {
         width: ($n / 24) * 100%;
       }
     }
-
     $class-prefix: offset-;
     @for $n from 1 through 24 {
       &.#{$class-prefix}#{$n} {
         margin-left: ($n / 24) * 100%;
       }
     }
-    @media (min-width: 577px) and (max-width: 768px) {
+    @media (min-width: 577px) {
       $class-prefix: col-ipad-;
       @for $n from 1 through 24 {
         &.#{$class-prefix}#{$n} {
@@ -83,7 +82,7 @@ export default {
         }
       }
     }
-    @media (min-width: 769px) and (max-width: 992px) {
+    @media (min-width: 769px){ // 770
       $class-prefix: col-narrow-pc-;
       @for $n from 1 through 24 {
         &.#{$class-prefix}#{$n} {
@@ -97,7 +96,7 @@ export default {
         }
       }
     }
-    @media (min-width: 993px) and (max-width: 1200px) {
+    @media (min-width: 993px) {
       $class-prefix: col-pc-;
       @for $n from 1 through 24 {
         &.#{$class-prefix}#{$n} {
