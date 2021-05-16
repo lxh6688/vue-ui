@@ -59,29 +59,31 @@
       <button @click="message +=1">+1</button>
     </div>
     
-    <s-row>
-      <s-col>1</s-col>
-      <s-col>2</s-col>
-    </s-row>
-    <s-row>
-      <s-col>1</s-col>
-      <s-col>2</s-col>
-      <s-col>3</s-col>
-    </s-row>
-    <s-row>
-      <s-col>1</s-col>
-      <s-col>2</s-col>
-      <s-col>3</s-col>
-      <s-col>4</s-col>
-    </s-row>
-    <s-row>
-      <s-col span="2">1</s-col>
-      <s-col span="22">11</s-col>
-    </s-row>
-    <s-row>
-      <s-col span="4">1</s-col>
-      <s-col span="20">11</s-col>
-    </s-row>
+    <div style="border: 1px solid black">
+      <s-row gutter="20">
+        <s-col>1</s-col>
+        <s-col>2</s-col>
+      </s-row>
+      <s-row gutter="20">
+        <s-col>1</s-col>
+        <s-col>2</s-col>
+        <s-col>3</s-col>
+      </s-row>
+      <s-row gutter="20">
+        <s-col>1</s-col>
+        <s-col>2</s-col>
+        <s-col>3</s-col>
+        <s-col>4</s-col>
+      </s-row>
+      <s-row gutter="20">
+        <s-col span="2">1</s-col>
+        <s-col span="22">11</s-col>
+      </s-row>
+      <s-row gutter="20">
+        <s-col span="4">1</s-col>
+        <s-col span="18" offset="2"></s-col>
+      </s-row>
+    </div>
   </div>
 
 <script src="./src/app.js"></script>
