@@ -35,6 +35,10 @@
       border: 1px solid #666;
       height: 100px;
     }
+    .demo1{
+      border:1px solid #666;
+      min-height: 100px;
+    }
   </style>
 </head>
 <body>
@@ -66,27 +70,37 @@
       <button @click="message +=1">+1</button>
     </div>
 
-      <g-row>
-        <g-col span="24" :narrow-pc="{span:8}">
+    <div  style="margin-bottom: 100px;">
+      <s-row>
+        <s-col span="24" :narrow-pc="{span:8}">
           <div class="demo"></div>
-        </g-col>
-        <g-col span="24" :narrow-pc="{span:8}">
+        </s-col>
+        <s-col span="24" :narrow-pc="{span:8}">
           <div class="demo"></div>
-        </g-col>
-        <g-col span="24" :narrow-pc="{span:8}">
+        </s-col>
+        <s-col span="24" :narrow-pc="{span:8}">
           <div class="demo"></div>
-        </g-col>
-        <g-col span="24" :narrow-pc="{span:8}">
+        </s-col>
+        <s-col span="24" :narrow-pc="{span:8}">
           <div class="demo"></div>
-        </g-col>
-        <g-col span="24" :narrow-pc="{span:8}">
+        </s-col>
+        <s-col span="24" :narrow-pc="{span:8}">
           <div class="demo"></div>
-        </g-col>
-        <g-col span="24" :narrow-pc="{span:8}">
+        </s-col>
+        <s-col span="24" :narrow-pc="{span:8}">
           <div class="demo"></div>
-        </g-col>
-      </g-row>
+        </s-col>
+      </s-row>
     </div>
+
+    <s-layout style="height: 100vh;">
+      <s-header class="demo1">header</s-header>
+      <s-layout>
+        <s-sider class="demo1">sider</s-sider>
+        <s-content class="demo1">content</s-content>
+      </s-layout>
+      <s-footer class="demo1">footer</s-footer>
+    </s-layout>
   </div>
 
 <script src="./src/app.js"></script>
