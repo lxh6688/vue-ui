@@ -35,9 +35,17 @@
       border: 1px solid #666;
       height: 100px;
     }
-    .demo1{
-      border:1px solid #666;
-      min-height: 100px;
+    .sider{
+      background: #333;
+      width: 200px;
+    }
+    .header{
+      background: #999;
+      height: 100px;
+    }
+    .footer{
+      background: #ccc;
+      height: 50px;
     }
   </style>
 </head>
@@ -94,12 +102,12 @@
     </div>
 
     <s-layout style="height: 100vh;">
-      <s-header class="demo1">header</s-header>
+      <s-sider>sider</s-sider>
       <s-layout>
-        <s-sider class="demo1">sider</s-sider>
-        <s-content class="demo1">content</s-content>
+        <s-header>header</s-header>
+        <s-content>content</s-content>
+        <s-footer>footer</s-footer>
       </s-layout>
-      <s-footer class="demo1">footer</s-footer>
     </s-layout>
   </div>
 
